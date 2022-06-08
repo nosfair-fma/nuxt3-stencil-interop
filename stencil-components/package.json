@@ -1,0 +1,26 @@
+{
+  "name": "stencil-components",
+  "private": true,
+  "version": "1.0.0",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.js",
+  "es2015": "dist/esm/index.mjs",
+  "es2017": "dist/esm/index.mjs",
+  "types": "dist/types/index.d.ts",
+  "collection": "dist/collection/collection-manifest.json",
+  "collection:main": "dist/collection/index.js",
+  "unpkg": "dist/stencil-components/stencil-components.esm.js",
+  "files": [
+    "dist/",
+    "hydrate/",
+    "loader/"
+  ],
+  "scripts": {
+    "dev": "stencil build --watch",
+    "build": "stencil build"
+  },
+  "dependencies": {
+    "@stencil/core": "^2.13.0"
+  },
+  "license": "MIT"
+}

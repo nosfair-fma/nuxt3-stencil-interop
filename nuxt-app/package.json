@@ -1,0 +1,12 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "version": "1.0.0",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev"
+  },
+  "dependencies": {
+    "stencil-components": "1.0.0"
+  }
+}

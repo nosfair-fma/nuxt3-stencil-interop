@@ -1,0 +1,21 @@
+{
+  "name": "nuxt3-stencil-interop",
+  "private": true,
+  "workspaces": [
+    "nuxt-app",
+    "stencil-components"
+  ],
+  "scripts": {
+    "bootstrap": "yarn && lerna bootstrap",
+    "dev": "lerna run dev --parallel",
+    "build": "lerna run build"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.3",
+    "jest": "^27.4.5",
+    "jest-cli": "^27.4.5",
+    "lerna": "^5.1.0",
+    "nuxt": "3.0.0-rc.3",
+    "puppeteer": "^10.0.0"
+  }
+}
