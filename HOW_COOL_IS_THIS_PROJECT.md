@@ -9,7 +9,7 @@ This project is a stellar example of modern web development showcasing seamless 
 ## Why This Project Is Cool 😎
 
 ### 1. **Bleeding-Edge Technology Stack**
-- **Nuxt 3** (RC version) - Next-generation Vue framework with:
+- **Nuxt 3** - Next-generation Vue framework with:
   - Built-in TypeScript support
   - Auto-imports
   - Server-side rendering (SSR)
@@ -49,11 +49,13 @@ The Stencil components are compiled to standard web components, meaning:
 // nuxt.config.ts
 vue: {
     compilerOptions: {
+        // Tell Vue to treat tags starting with 'component-with-' as custom elements
+        // This prevents Vue from trying to resolve them as Vue components
         isCustomElement: (tag) => tag.startsWith('component-with-'),
     },
 }
 ```
-This tells Vue compiler to treat custom elements properly instead of treating them as Vue components.
+This configuration tells the Vue compiler to treat custom elements properly instead of treating them as Vue components, allowing seamless integration of Stencil web components.
 
 #### SSR Hydration Module
 The project includes a custom Nuxt module (`stencil-ssr.ts`) that:
